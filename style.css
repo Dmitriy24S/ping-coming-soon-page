@@ -153,3 +153,21 @@ footer {
 a:hover {
   opacity: 0.8;
 }
+/* desktop style */
+@media (min-width: 768px) {
+  form {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: initial;
+  }
+  main {
+    max-width: 768px;
+  }
+  form input {
+    width: 318px;
+  }
+  button {
+    width: 180px;
+  }
+}
