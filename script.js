@@ -10,6 +10,9 @@ form.addEventListener("submit", (e) => {
     showErrorMessage(form);
   } else {
     form.classList.remove("error");
+    // remove error message element
+    const div = form.getElementsByClassName("error-text");
+    div[0].parentNode.removeChild(div[0]);
   }
 });
 
